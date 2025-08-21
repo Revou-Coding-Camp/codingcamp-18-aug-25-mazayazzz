@@ -6,24 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>✨ Girly Todo List ✨</title>
 
-  <!-- CSS External -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Tailwind CSS CDN -->
-  <script src=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.0.0/dist/tailwind.min.js"></script>
 </head>
 
 <body class="bg-pink-50 font-sans text-gray-700">
 
-  <!-- Hero Section -->
   <header class="text-center py-6 bg-pink-200 shadow-md">
     <h1 class="text-5xl font-extrabold text-pink-700">💖 My Cute Todo List 💖</h1>
     <p class="text-lg text-pink-600 mt-2">Stay organized in the prettiest way ✨</p>
   </header>
 
-  <!-- Main Content -->
   <main class="max-w-2xl mx-auto mt-6 p-6 bg-white rounded-2xl shadow-lg">
-    <!-- Todo Form -->
     <form class="flex gap-3 mb-6 flex-wrap justify-center">
       <input type="text" id="task-input" placeholder="Type your task..."
         class="border-2 border-pink-300 p-2 rounded-xl w-full sm:w-2/5 focus:outline-none focus:ring-2 focus:ring-pink-400">
@@ -34,7 +27,6 @@
         Add</button>
     </form>
 
-    <!-- Action Buttons -->
     <section class="flex justify-center gap-4 mb-6">
       <button class="bg-purple-400 hover:bg-purple-500 text-white px-4 py-2 rounded-xl shadow-md transition">🌸
         Filter</button>
@@ -43,7 +35,6 @@
         Delete All</button>
     </section>
 
-    <!-- Task List -->
     <section>
       <header class="text-center mb-4">
         <h2 class="text-3xl font-bold text-pink-600">🌷 My Tasks 🌷</h2>
@@ -57,12 +48,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="text-center mt-10 py-4 bg-pink-200 text-pink-700 font-medium shadow-inner">
     <span>&copy; 2025 Mazaya Nur Angelina. All rights reserved.</span>
   </footer>
 
-  <!-- JS External -->
   <script src="js/script.js"></script>
 </body>
 
