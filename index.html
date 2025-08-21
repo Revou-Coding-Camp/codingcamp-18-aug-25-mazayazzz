@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Girly Todo List ✨</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src=""></script>
+</head>
+
+<body class="bg-pink-50 font-sans text-gray-700">
+
+  <!-- Hero Section -->
+  <header class="text-center py-6 bg-pink-200 shadow-md">
+    <h1 class="text-5xl font-extrabold text-pink-700">💖 My Cute Todo List 💖</h1>
+    <p class="text-lg text-pink-600 mt-2">Stay organized in the prettiest way ✨</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-2xl mx-auto mt-6 p-6 bg-white rounded-2xl shadow-lg">
+    <!-- Todo Form -->
+    <form class="flex gap-3 mb-6 flex-wrap justify-center">
+      <input type="text" id="task-input" placeholder="Type your task..."
+        class="border-2 border-pink-300 p-2 rounded-xl w-full sm:w-2/5 focus:outline-none focus:ring-2 focus:ring-pink-400">
+      <input type="date" id="due-date-input"
+        class="border-2 border-pink-300 p-2 rounded-xl w-full sm:w-1/4 focus:outline-none focus:ring-2 focus:ring-pink-400">
+      <button type="button" onclick="validateForm();"
+        class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-4 py-2 rounded-xl shadow-md transition">➕
+        Add</button>
+    </form>
+
+    <!-- Action Buttons -->
+    <section class="flex justify-center gap-4 mb-6">
+      <button class="bg-purple-400 hover:bg-purple-500 text-white px-4 py-2 rounded-xl shadow-md transition">🌸
+        Filter</button>
+      <button onclick="deleteAll()"
+        class="bg-red-400 hover:bg-red-500 text-white px-4 py-2 rounded-xl shadow-md transition">🗑️
+        Delete All</button>
+    </section>
+
+    <!-- Task List -->
+    <section>
+      <header class="text-center mb-4">
+        <h2 class="text-3xl font-bold text-pink-600">🌷 My Tasks 🌷</h2>
+      </header>
+
+      <ul class="my-4 space-y-2" id="task-list">
+        <li class="border border-pink-200 rounded-xl p-3 bg-pink-100">✨ Finish homework</li>
+        <li class="border border-pink-200 rounded-xl p-3 bg-pink-100">✨ Clean my desk</li>
+        <li class="border border-pink-200 rounded-xl p-3 bg-pink-100">✨ Read a new book</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center mt-10 py-4 bg-pink-200 text-pink-700 font-medium shadow-inner">
+    <span>&copy; 2025 Mazaya Nur Angelina. All rights reserved.</span>
+  </footer>
+
+  <!-- JS External -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
