@@ -1,0 +1,8 @@
+body {
+    element.style {
+    justify-items: center;
+    height: 100vh;
+    align-content: center;
+}
+    background-color: #f8f3f9;
+}

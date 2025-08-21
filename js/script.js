@@ -1,3 +1,4 @@
+console.log("Girly Todo List Script Loaded");
 const taskInput = document.getElementById("task-input");
 const dueDateInput = document.getElementById("due-date-input");
 const taskList = document.getElementById("task-list");
