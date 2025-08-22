@@ -29,8 +29,12 @@
     </form>
 
     <section class="flex justify-center gap-4 mb-6">
-      <button class="bg-purple-400 hover:bg-purple-500 text-white px-4 py-2 rounded-xl shadow-md transition">🌸
+      <button onclick="filterTasks()" 
+        class="bg-purple-400 hover:bg-purple-500 text-white px-4 py-2 rounded-xl shadow-md transition">🌸
         Filter</button>
+      <button onclick="resetFilter()" 
+        class="bg-green-400 hover:bg-green-500 text-white px-4 py-2 rounded-xl shadow-md transition">🔄
+        Reset</button>
       <button onclick="deleteAll()"
         class="bg-red-400 hover:bg-red-500 text-white px-4 py-2 rounded-xl shadow-md transition">🗑️
         Delete All</button>
@@ -41,11 +45,9 @@
         <h2 class="text-3xl font-bold text-pink-600">🌷 My Tasks 🌷</h2>
       </header>
 
-      <ul class="my-4 space-y-2" id="task-list">
-        <li class="border border-pink-200 rounded-xl p-3 bg-pink-100">✨ Finish homework</li>
-        <li class="border border-pink-200 rounded-xl p-3 bg-pink-100">✨ Clean my desk</li>
-        <li class="border border-pink-200 rounded-xl p-3 bg-pink-100">✨ Read a new book</li>
-      </ul>
+      <ul class="my-4 space-y-2" id="task-list"></ul>
+      <p id="empty-list-msg" class="text-center text-pink-400 font-medium">No tasks yet 🌸 Add one above!</p>
+      <p id="no-task-msg" class="text-center text-pink-500 font-medium hidden">No tasks found 🌼</p>
     </section>
   </main>
 
